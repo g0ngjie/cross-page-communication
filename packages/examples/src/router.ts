@@ -5,6 +5,7 @@ const routes: RouteRecordRaw[] = [
     { path: '/storage', component: () => import('./pages/event-storage.vue') },
     { path: '/channel', component: () => import('./pages/broadcase-channel.vue') },
     { path: '/worker', component: () => import('./pages/service-worker.vue') },
+    { path: '/opener', component: () => import('./pages/opener.vue') },
 ]
 
 const router = createRouter({
