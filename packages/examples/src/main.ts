@@ -1,11 +1,7 @@
-import { setupCounter } from './counter'
+import { createApp } from 'vue'
+import router from "./router";
+import App from './App.vue'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-  </div>
-`
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+createApp(App)
+    .use(router)
+    .mount('#app')
