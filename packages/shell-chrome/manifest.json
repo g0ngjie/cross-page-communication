@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "页签通信",
+  "version": "0.0.1",
+  "description": "多tab页变更信息传递测试",
+  "author": "Gj",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "action": {
+    "default_icon": "128.png"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}
